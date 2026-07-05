@@ -15,7 +15,7 @@ test('TC02_PrfileUpdate', async ({page})=>
     let username = await page.getByPlaceholder('Enter your active Email ID / Username').fill(profile.naukriUsername);
     let password = await page.getByPlaceholder('Enter your password').fill(profile.naukriPassword);
     let loginButton2 = await page.locator('//button[@type="submit"]').click();
-    console.log('Logged in Successfully..........');
+    console.log('\nLogged in Successfully..........');
 
     // ===================== Validating login =================================
     let candidateProfile = await page.locator('//div[@class="name-wrapper"]');
