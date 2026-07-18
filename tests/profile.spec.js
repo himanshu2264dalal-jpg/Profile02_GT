@@ -34,7 +34,7 @@ test('TC02_PrfileUpdate', async ({page})=>
     await page.locator('.lightbox.profileEditDrawer.profileUpdatedProLayer > .crossLayer > .icon').click();
 
     // =========================== Uploading resume ===========================
-    await page.locator('//input[@id="attachCV"]').setInputFiles('testData/resume/DalalHimanshu_AutomationTestEngineer_.pdf');
+    await page.locator('//input[@id="attachCV"]').setInputFiles('testData/resume/DalalHimanshu_AutomationTestEngineer.pdf');
     console.log('Updated resume.......')
 
     // ===================== Validating resume updation ==========================
